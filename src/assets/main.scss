@@ -1,0 +1,41 @@
+@import '~bulma';
+
+.inline-block {
+  display: inline-block;
+}
+
+.mh-30 {
+  min-height: 30vh;
+}
+
+.mh-80 {
+  min-height: 80vh !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.card {
+    max-height: 20vh;
+    .image {
+      width: 20vh;
+      height: 20vh;
+      background-position: center;
+      background-size: contain;
+    }
+    &.is-horizontal {
+      display: flex;
+      
+      .card-stacked {
+        flex-direction: column;
+        flex: 1 1 auto;
+        display: flex;
+        position: relative;
+        
+        .card-content {
+          flex-grow: 1;
+        }
+      }
+    }
+}
